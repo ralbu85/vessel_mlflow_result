@@ -16,6 +16,7 @@ st.success(f"Loaded {selected_file} with {len(df)} rows")
 desired_order = ["none", "1h", "3h", "6h", "12h", "24h"]  # example
 factors = ['downsample', 'split', 'target_feature', 'OutlierRemoval', 'environmental_features']
 metrics = ["mae", "mape", "r2", "mse"]
+df = df[df[metrics]>-1]
 
 # Selectors
 color_feature = st.selectbox("Color By:", factors)
