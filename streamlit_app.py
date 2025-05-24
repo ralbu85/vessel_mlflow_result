@@ -12,7 +12,7 @@ desired_order = ["none", "1h", "3h", "6h", "12h", "24h"]  # example
 
 # Selectors
 color_feature = st.selectbox("Color By:", df.columns)
-metric = st.selectbox("Metric:", ["RMSE", "MAE", "R2"])  # adjust as needed
+metric = st.selectbox("Metric:", ["mae", "mape", "r2", "mse"])  # adjust as needed
 
 # Hover info
 hover_factors = [
